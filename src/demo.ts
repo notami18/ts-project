@@ -1,9 +1,9 @@
 (async ()=> {
   const myCart = [];
-  const products = [];
+  const products: string | any[] = [];
   const limit = 2;
 
-  async function getProducts() {
+  async function getProducts(): Promise<void> {
     const rta = await fetch('http://api.escuelajs.co/api/v1/products', {
       method: 'GET'
     });
