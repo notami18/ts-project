@@ -5,13 +5,13 @@
     createAt: Date,
     stock: number,
     size?: Sizes
-  }
+  };
 
   const products: Product[] = [];
 
   const addProduct = (data: Product) => {
     products.push(data);
-  }
+  };
 
   addProduct({
     title: 'Pro 1',
